@@ -12,6 +12,21 @@ class AppTextStyles {
     fontSize: 14,
     color: AppTextColors.body1Color,
   );
+  static TextStyle heading2 = GoogleFonts.poppins(
+    fontWeight: FontWeight.w700,
+    fontSize: 20,
+    color: AppTextColors.darkGrey,
+  );
+  static TextStyle subHeading1 = GoogleFonts.poppins(
+    fontWeight: FontWeight.w600,
+    fontSize: 17,
+    color: AppTextColors.darkGrey,
+  );
+  static TextStyle caption = GoogleFonts.poppins(
+    fontWeight: FontWeight.w400,
+    fontSize: 10,
+    color: AppTextColors.darkGrey,
+  );
 }
 
 ThemeData appTheme = ThemeData(scaffoldBackgroundColor: Colors.white);

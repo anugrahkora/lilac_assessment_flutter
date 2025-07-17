@@ -11,3 +11,13 @@ class SendOtpEvent extends PhoneNumberEvent {
   @override
   List<Object?> get props => [phoneNumber, countryCode];
 }
+
+class VerifyOtpEvent extends PhoneNumberEvent {
+  final String otpCode;
+  final String phoneNumber;
+
+  VerifyOtpEvent({ required this.otpCode,required this.phoneNumber});
+
+  @override
+  List<Object?> get props => [otpCode,phoneNumber];
+}

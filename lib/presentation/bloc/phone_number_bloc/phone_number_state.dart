@@ -30,3 +30,21 @@ class OtpErrorState extends PhoneNumberState {
   @override
   List<Object?> get props => [errorMessage];
 }
+
+class OtpVerfificationState extends PhoneNumberState {
+  @override
+  List<Object?> get props => [];
+}
+
+class OtpVerificationSuccessState extends PhoneNumberState {
+  final Map<String, dynamic> response;
+
+  OtpVerificationSuccessState({required this.response});
+  @override
+  List<Object?> get props => [];
+}
+
+class OtpStopVerificationState extends PhoneNumberState {
+  @override
+  List<Object?> get props => [];
+}
